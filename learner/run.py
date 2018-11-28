@@ -7,9 +7,7 @@ lib_path = os.path.realpath(os.path.join(os.path.abspath(os.path.dirname(__file_
 if lib_path not in sys.path:
     sys.path[0:0] = [lib_path]
 
-import utils
-import clusterers
-import processors
+from lib import utils, clusterers, processors
 import simplejson as json
 import os
 import argparse

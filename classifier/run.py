@@ -7,14 +7,14 @@ lib_path = os.path.realpath(os.path.join(os.path.abspath(os.path.dirname(__file_
 if lib_path not in sys.path:
     sys.path[0:0] = [lib_path]
 
-import utils
-import clusterers
-import processors
+from lib import utils
+from lib import clusterers
+from lib import processors
 import simplejson as json
 import os
 import argparse
-import analyzers
-import tokenizers
+from lib import analyzers
+from lib import tokenizers
 import numpy as np
 from sklearn.feature_extraction import DictVectorizer
 from sklearn import svm, preprocessing, cross_validation

@@ -1,8 +1,6 @@
 from settings import CELERY as celery
 import settings
-import utils
-import clusterers
-import processors
+from lib import utils, clusterers, processors
 import cPickle as pickle
 import simplejson as json
 import zlib
