@@ -26,3 +26,4 @@ store
 .DS_Store*
 Icon?
 
+.idea/

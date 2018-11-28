@@ -117,9 +117,9 @@ class Stats(Handler):
 
         self.cors()
         self.write({
-            'usage': int(usage),
-            'sites': int(sites),
-            'pages': int(pages),
+            'usage': int(usage if usage is not None else '0'),
+            'sites': int(sites if sites is not None else '0'),
+            'pages': int(pages if pages is not None else '0'),
         })
         self.finish()
 
